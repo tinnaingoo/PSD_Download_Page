@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+	<head>
+		<title>Demo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/animation.css" />
+		<link rel="stylesheet" href="../css/font.css" />
+		<link rel="stylesheet" href="../css/search.css" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/android.js"></script>
+	</head>
+	
+	<body>
+		<div class="app-bar" >
+			<div class="container row" >
+				<div class="clickableIcon hover-effect material-icons" onclick="history.back();">arrow_back</div>
+				<form id="search-form" autocomplete="off" >
+					<input type="text" id="search-input" placeholder="Search here ..." onkeyup="uTyping(this.value)"/>
+				</form>
+				<div class="clear-btn material-icons" >clear</div>
+			</div>
+		</div>
+		
+		<div id="main" >
+			<div id="search-view" ></div>
+		</div>
+		
+		<!-- Loader -->
+		<div class="loader-view" >
+			<div class="loader"></div> 
+		</div>
+		
+		<!-- Fail view -->
+		<div class="fail-view" >
+			<div class="fail">
+				<div class="material-icons" >error_outline</div>
+				<div>Netwrok Connection Error!</div>
+			</div> 
+		</div>
+		
+		<!-- No search result -->
+		<div class="no-search-result">
+			<div class="search-icon material-icons" >search</div>
+			<div class="main-font" >"No search result found"</div>
+		</div> 
+			
+		<script src="../js/main.js"></script>
+		<script src="../js/search.js"></script>
+	</body>
+
+</html>

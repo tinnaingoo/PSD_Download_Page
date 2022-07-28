@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+	<head>
+		<title>Demo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<link rel="stylesheet" href="../css/animation.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/post-view.css" />
+		<link rel="stylesheet" href="../css/font.css" />
+		<link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/android.js"></script>
+	</head>
+	
+	<body>
+		<div class="app-bar">
+			<div class="container row">
+			 	<div class="hover-effect clickableIcon material-icons" onclick="history.back();">arrow_back</div>
+			 	<div class="app-name main-font">Loading ...</div> 
+				<div class="refresh-icon hover-effect clickableIcon material-icons">refresh</div> 
+			</div>
+		</div>
+		 
+		 <!-- main -->
+		 <div id="main" >
+		 	<div id="post-view"></div> 
+		 </div>
+		 
+		 <!-- Loader -->
+		 <div class="loader-view" >
+			 <div class="loader"></div> 
+		 </div>
+		 
+		 <!-- Fail view -->
+		 <div class="fail-view" >
+			 <div class="fail">
+				 <div class="material-icons" >error_outline</div>
+				 <div>Netwrok Connection Error!</div>
+			 </div> 
+		 </div>
+		 
+		<script src="../js/main.js"></script>
+		<script src="../js/post-view.js"></script>
+	</body>
+
+</html>

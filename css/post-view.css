@@ -1,0 +1,36 @@
+#post-view .header {
+	padding: 10px;
+	background: #f1f1f1;
+}
+
+#post-view .header .date-row div:nth-child(1){
+	font-size: 16pt;
+}
+
+#post-view .header .date-row div:nth-child(2){
+	margin-left: 10px;
+}
+
+#post-view .header .menu-icon {
+	margin-left: auto;
+}
+
+#post-view .header .menu-icon div:nth-child(1),
+#post-view .header .menu-icon div:nth-child(2) {
+	color: var(--color-second);
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	padding: 7px;
+	font-size: 13pt;
+	margin: 0 10px;
+}
+
+#post-view .content {
+	margin: 10px;
+}
+
+#post-view .content img {
+	width: 70%;
+	cursor: none;
+	border: 1px solid #ddd;
+}

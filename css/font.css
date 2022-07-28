@@ -1,0 +1,31 @@
+/* MATERIAL ICON FONT */
+@font-face {
+	 font-family: Material-Icon;
+	 font-style: normal;
+	 font-weight: 400;
+	 src: url("../font/material-icons.woff2");
+}
+
+.material-icons {
+	 font-family: Material-Icon;
+	 font-size: 24px;
+	 /* Preferred icon size */
+	 display: inline-block;
+	 line-height: 1;
+	 text-transform: none;
+	 letter-spacing: normal;
+	 word-wrap: normal;
+	 white-space: nowrap;
+	 direction: ltr;
+}
+
+/* Unicode */
+@font-face {
+	font-family: unicode;
+	src: url("../font/unicode.ttf");
+}
+
+.main-font, .unicode {
+	font-family: unicode;
+	line-height: 1.8em;
+}

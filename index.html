@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+	<head>
+		<title>PSD Download</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<link rel="stylesheet" href="css/drawer.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/animation.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/font.css" />
+		<link rel="stylesheet" href="css/swipper.min.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/swipper.min.js"></script>
+		<script src="js/android.js"></script>
+	</head>
+	
+	<body>
+		<!-- App Bar -->
+		<div class="app-bar" >
+			<div class="container row" >
+				<div class="clickableIcon hover-effect material-icons" onclick="drawerToggle(true)">menu</div>
+				<div class="app-name main-font" >Home</div>
+				<div class="refresh-icon hover-effect clickableIcon material-icons">refresh</div> 
+				<div class="search-icon hover-effect clickableIcon material-icons" onclick="pageChange('search')">search</div> 
+			</div>
+		</div>
+		
+		<!-- Drawer Layout -->
+		<div id="drawer-layout">
+	        <div class="drawer-header" ></div>
+	        <div class="drawer-items" >
+	            
+	        	<div class="item row hover-effect" data-id="home" onclick="drawerItemSelected(this)">
+	        		<div class="icon material-icons" >home</div>
+	        		<div class="name" >Home</div>
+	        	</div>
+	        	
+	        	<div class="item row hover-effect" data-id="fav" onclick="drawerItemSelected(this)">
+		        	<div class="icon material-icons" >favorite</div>
+		        	<div class="name" >Favorite List</div>
+	        	</div>
+	        	
+	        	<!--<div class="item row hover-effect" data-id="refresh" onclick="drawerItemSelected(this)">
+		        	<div class="icon material-icons" >refresh</div>
+		        	<div class="name" >Refresh</div>
+	        	</div>
+	        	
+	        	<!--<div class="item row hover-effect" data-id="exit" onclick="drawerItemSelected(this)">
+		        	<div class="icon material-icons" >clear</div>
+		        	<div class="name" >Exit</div>
+	        	</div>-->
+	        	
+	        	<div class="item row hover-effect" data-id="clear_all" onclick="drawerItemSelected(this)">
+		        	<div class="icon material-icons" >clear_all</div>
+		        	<div class="name" >Clear all data</div>
+	        	</div>
+	        	
+	        </div>
+    	</div>
+    
+	    <div id="drawer-overlay" onclick="drawerToggle(false)"></div>
+    	
+    	<!-- main -->
+    	<div id="main" >
+    		<div class="section-1" >
+    			<div class="row" >
+	    			<div class="name main-font" >Random Posts</div>
+    			</div>
+    			
+    			<div id="rand-row" class="horizontal-scrollable" >
+    				<table width="100%" >
+    					<tr id="rand-post-cont" >
+    					</tr>
+    				</table>
+    			</div>
+    		</div>
+    		
+    		<div class="section-2" >
+    			<div class="row" >
+	    			<div class="name main-font" >Recent Posts</div>
+	    			<div class="recent-view-all" >VIEW ALL</div>
+    			</div>
+    			
+    			<div id="recent-list" >
+    				<!--<div class="recent-post row" >
+    					<div class="icon" ></div>
+    					<div>
+	    					<div class="title main-font" >This is title</div>
+	    					<div class="row" >
+	    					
+	    						<div class="date-row row" >
+		    						<div class="material-icons" >public</div>
+		    						<div style="margin-left: 5px" >Just now</div>
+	    						</div>
+	    						
+	    						<div class="menu-icon" >
+	    							<div class="material-icons" >favorite_border</div>
+	    							<div class="material-icons" >share</div> 
+	    						</div>
+	    						
+	    					</div>
+    					</div>
+    				</div> -->
+    			</div>
+    		</div>
+    	</div>
+    	
+    	<!-- Loader -->
+    	<div class="loader-view" >
+	    	<div class="loader"></div> 
+    	</div>
+    	
+    	<!-- Fail view -->
+    	<div class="fail-view" >
+	    	<div class="fail">
+	    		<div class="material-icons" >error_outline</div>
+	    		<div>No Internet Connection!</div>
+			<div>Please Reconnect to Internet.</div>
+	    	</div> 
+    	</div>
+    	
+    	<script src="js/drawer.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+
+</html>

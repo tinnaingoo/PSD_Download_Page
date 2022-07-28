@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+	<head>
+		<title>Demo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<link rel="stylesheet" href="../css/malert.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/fav-list.css" />
+		<link rel="stylesheet" href="../css/font.css" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/malert.js"></script>
+	</head>
+	
+	<body>
+		<div class="app-bar" >
+			<div class="container row">
+			 	<div class="clickableIcon hover-effect material-icons" onclick="history.back();">arrow_back</div>
+			 	<div class="app-name" >Favorite List</div>
+			 	<div id="delete-all-fav">DELETE ALL</div>
+			</div>
+		</div>
+		
+		<div id="main" >
+			<div id="fav-list" ></div>
+			
+			<!-- No Fav Data -->
+			<div class="no-fav-data main-font">No favorite data!</div>
+		</div>
+		
+		<!-- mAlert -->
+		<div id="alertView" ></div>
+		<div id="alertOverlay" ></div>
+		
+		<script src="../js/main.js"></script>
+		<script src="../js/fav-list.js"></script>
+	</body>
+
+</html>

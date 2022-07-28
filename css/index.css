@@ -1,0 +1,90 @@
+.section-1, .section-2 {
+	padding: 10px;
+}
+
+.section-1 .name, .section-2 .name {
+	padding-left: 10px;
+	border-left: 3px solid var(--color-second);
+}
+
+.section-1 #rand-row {
+	margin-top: 10px;
+}
+
+.section-1 #rand-row table td {
+	width: ;
+}
+
+.section-1 #rand-row .rand-post {
+	position: relative;
+	width: 270px;
+	height: 150px;
+	background: #fff;
+	border-radius: 10px;
+	margin-left: 10px;
+	box-shadow: var(--default-shadow);
+}
+
+.section-1 #rand-row .rand-post .title {
+	position:absolute;
+	bottom: 0;
+	color: #fff;
+	width: 96.5%;
+	padding: 5px;
+	line-height: 1.5em;
+	border-radius: 0 0 10px 10px;
+	background: linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0));
+}
+
+
+
+.section-2 {
+	/**/
+}
+
+.section-2 #recent-list {
+	margin-top: 10px;
+}
+
+.section-2 #recent-list .recent-post {
+	margin: 10px;
+	padding: 10px;
+	background: #fff;
+	border-radius: 10px;
+	/*box-shadow: var(--default-shadow);*/
+	border: 1px solid #ddd;
+}
+
+.section-2 #recent-list .recent-post .icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #eee;
+	margin: 0 10px 0 5px;
+}
+
+.section-2 #recent-list .recent-post .title {
+	font-weight: bold;
+}
+
+.section-2 #recent-list .recent-post .menu-icon {
+	margin-left: auto;
+}
+
+.section-2 #recent-list .recent-post .date-row {
+	color: #999;
+}
+
+.section-2 #recent-list .recent-post .menu-icon div {
+	margin-left: 10px;
+	padding: 7px;
+	color: var(--color-second);
+	border: 1px solid #eee;
+	border-radius: 50%;
+	font-size: 13pt;
+}
+
+.section-2 .recent-view-all {
+	color: var(--color-second);
+	margin-left: auto;
+}

@@ -1,0 +1,45 @@
+#delete-all-fav {
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.fav-post {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.fav-post .col-1 img, .fav-post .icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 0 #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fav-post .col-2 {
+    margin-left: 10px;
+}
+
+.fav-post .col-2 .title {
+    font-weight: bold;
+}
+
+.fav-post .col-2 .date {
+    color: #888;
+    margin-left: 10px;
+}
+
+.fav-post .col-3 {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/* no fav data */
+.no-fav-data {
+	margin: 10px;
+	text-align: center;
+}
